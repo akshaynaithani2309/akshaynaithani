@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% include 'sidebar.html' %}
+
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                   
+                        <div class="card-body">
+                            <div class="live-preview">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="stats-info">
+                                            <h6>Annual Leave</h6>
+                                            <h4>12</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stats-info">
+                                            <h6>Medical Leave</h6>
+                                            <h4>3</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stats-info">
+                                            <h6>Other Leave</h6>
+                                            <h4>4</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stats-info">
+                                            <h6>Remaining Leave</h6>
+                                            <h4>5</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div> 
+            <!--end col-->
+          
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header align-items-center d-flex">
+                            <h4 class="card-title mb-0 flex-grow-1">Apply Leave</h4>
+                        </div><!-- end card header -->
+                        <div class="card-body">
+                            <div class="live-preview">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="JoiningdatInput" class="form-label">Leave Type</label>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option selected="">Leave Type </option>
+                                                <option value="1">Casual Leave</option>
+                                                <option value="2">Earn Leave</option>
+                                                <option value="3">Work From Home Leave</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="readonlyInput" class="form-label">Remaining Leaves</label>
+                                            <input type="text" class="form-control" value="10" readonly="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="JoiningdatInput" class="form-label">From</label>
+                                            <input type="date" class="form-control" name="joining"
+                                                data-provider="flatpickr" data-date-format="d M, Y"
+                                                data-deafult-date="24 Nov, 2021" placeholder="" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="JoiningdatInput" class="form-label">To</label>
+                                            <input type="date" class="form-control" name="joining"
+                                                data-provider="flatpickr" data-date-format="d M, Y"
+                                                data-deafult-date="24 Nov, 2021" placeholder="" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="VertimeassageInput" class="form-label">Message</label>
+                                            <textarea class="form-control" id="VertimeassageInput" rows="3"
+                                                placeholder="Enter your message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="hstack gap-2 justify-content-end">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="button" class="btn btn-soft-success">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
+
+
+
+            <!--end row-->
+        </div>
+        <!-- container-fluid -->
+    </div><!-- End Page-content -->
+
+    {% endblock %}

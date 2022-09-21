@@ -1,0 +1,98 @@
+   <!-- ========== App Menu ========== -->
+   <div class="app-menu navbar-menu">
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <!-- Dark Logo-->
+        <a href="/admin" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="static/assets/images/logo.png" alt="" height="40">
+            </span>
+            <span class="logo-lg">
+                <img src="static/assets/images/logo.png" alt="" height="40">
+            </span>
+        </a>
+        <!-- Light Logo-->
+        <a href="index.html" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="static/assets/images/logo.png" alt="" height="40">
+            </span>
+            <span class="logo-lg">
+                <img src="static/assets/images/logo.png" alt="" height="40">
+            </span>
+        </a>
+        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+            id="vertical-hover">
+            <i class="ri-record-circle-line"></i>
+        </button>
+    </div>
+
+    <div id="scrollbar">
+        <div class="container-fluid">
+
+            <div id="two-column-menu">
+            </div>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="/admin" >
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
+                    </a>
+                </li> <!-- end Dashboard Menu -->
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-dashboards">Employee</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarDashboards">
+                        <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                                <a href="/all-employees" class="nav-link" data-key="t-ecommerce"> All Employees </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/add-employee" class="nav-link" data-key="t-ecommerce"> Add Employee </a>
+                            </li>
+                            
+                          
+                         
+                        </ul>
+                    </div>
+                </li> <!-- end Dashboard Menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#sidebarAttendence" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAttendence">
+                        <i class="las la-calendar"></i> <span data-key="t-layouts">Attendence</span>
+                    </a>
+                    <div class="menu-dropdown collapse" id="sidebarAttendence">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/today-attendence" class="nav-link" data-key="t-Attendence"> Today's Attendence </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/attendence-sheet" class="nav-link" data-key="t-Attendence"> Attendence Sheet </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="#sidebarleave" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarleave">
+                        <i class="ri-layout-grid-line"></i> <span data-key="t-leave">Leave Management</span>
+                    </a>
+                    <div class="menu-dropdown collapse" id="sidebarleave">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-basic-tables">Leaves Request</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->
+<!-- Vertical Overlay-->
+<div class="vertical-overlay"></div>
