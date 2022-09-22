@@ -1,3 +1,4 @@
+from xml.dom.expatbuilder import theDOMImplementation
 from flask import (Flask, after_this_request, flash, jsonify, redirect, render_template, request, session, url_for)
 import os
 from datetime import date, datetime, timedelta , time
@@ -247,7 +248,6 @@ def adminlogin():
             return render_template('admin-login.html', message=message)
     return render_template('admin-login.html')
     
-
 @app.route("/change-password")
 def adminchange_password():
     if not session.get("email"):
@@ -295,14 +295,12 @@ def employees():
             employees['profilepic'] = request.form['profilepic']
         team.insert_one(employees)
         return redirect("/all-employees")
-
 @app.route("/all-employees")
 def all_employees():
        if not session.get("email"):
               return redirect("/admin-login")    
        emp_list = team.find()
        return render_template('all-employees.html' , emp_list = emp_list)
-
 
 @app.route("/edit-employee")
 def edit_employee ():
@@ -359,7 +357,6 @@ def attendence_sheet():
 def adminlogout():
     session.pop('email',None)
     return redirect(url_for('adminlogin'))
-
 
 
 if __name__ == "__main__":
